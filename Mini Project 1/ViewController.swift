@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var moreInfo: UILabel!
+    @IBOutlet weak var moreInfo2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func learnMore(_ sender: UIButton) {
+        
+        moreInfo.text = "I teach third grade."
+        moreInfo2.text = "I am so excited to teach you all how to code!"
+    }
+    
 }
 
